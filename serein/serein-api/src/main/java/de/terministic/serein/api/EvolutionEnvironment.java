@@ -46,7 +46,7 @@ public interface EvolutionEnvironment<P> {
 	Individual<P, ?> getFittest();
 
 	/**
-	 * Provides a reference fitness comparator, that my be used by other
+	 * Provides a reference fitness comparator, that may be used by other
 	 * objects/individuals.
 	 * 
 	 * @return a fitness comparator

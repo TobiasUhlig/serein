@@ -27,7 +27,7 @@ public class DefaultEvolutionEnvironment<P> extends
 		update(Msg.StartEvolution);
 		while (getTerminationCondition().doContinue()) {
 			update(Msg.NextGeneration);
-
+			
 			Population<P> parents = getReproductionSelector()
 					.selectIndividuals(getPopulation());
 			Population<P> offspring = Populations.emptyPopulation();
