@@ -50,7 +50,7 @@ public class SumOfDifferentPowersFunction implements BenchmarkFunction {
 		int n = x.length;
 		double sum = 0.0;
 		for (int i = 0; i < n; i++) {
-			sum += Math.pow(x[i], i+2);
+			sum += Math.pow(Math.abs(x[i]), i+2);
 		}
 		return sum;
 	}
